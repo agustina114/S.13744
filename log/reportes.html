@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resumen Final - Proyecto Azure</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 min-h-screen flex flex-col">
+
+ 
+  <header class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-10 shadow-lg">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-extrabold mb-2">Resumen Final del Proyecto</h1>
+      <p class="text-lg opacity-90">Despliegue de una Máquina Virtual en Microsoft Azure</p>
+    </div>
+  </header>
+
+  
+  <main class="container mx-auto px-6 py-12 flex-grow">
+    <div class="max-w-4xl mx-auto space-y-10">
+
+    
+      <section class="bg-white/80 backdrop-blur shadow-lg rounded-2xl p-8 border border-white">
+        <h2 class="text-2xl font-bold text-blue-700 mb-4">📘 Resumen</h2>
+        <p class="leading-relaxed text-gray-700">
+          Durante el día de hoy tuvimos un objetivo el cual fue desplegar una máquina virtual en la nube de Microsoft Azure y entender cómo configurarla. 
+          Realizamos la creación de distintas páginas web (<code>index.html</code>, <code>log.html</code> y un reporte), 
+          cumpliendo con los contenidos solicitados. Esta actividad permitió activar una máquina virtual, 
+          integrando tanto evidencias como técnicas para realizar los procesos de manera correcta y efectiva.
+        </p>
+      </section>
+
+      <section class="bg-white/80 backdrop-blur shadow-lg rounded-2xl p-8 border border-white">
+        <h2 class="text-2xl font-bold text-purple-700 mb-4">⚙️ Arquitectura</h2>
+        <p class="leading-relaxed text-gray-700">
+          Se utilizó un equipo virtual con Linux para montar un servidor web configurado. 
+          Se habilitó el tráfico en la red por el puerto 80, 
+          permitiendo el acceso a la página web. Esta configuración permite que Apache entregue el contenido ante solicitudes SSH.
+        </p>
+        <ul class="list-disc pl-6 mt-4 space-y-1 text-gray-700">
+          <li><strong>Servicio usado:</strong> Microsoft Azure</li>
+          <li><strong>Sistema operativo:</strong> Ubuntu 20.04 LTS</li>
+          <li><strong>Servidor web:</strong> Apache2</li>
+          <li><strong>Red:</strong> IP pública con acceso HTTP habilitado gracias a NSG</li>
+        </ul>
+      </section>
+
+      <section class="bg-white/80 backdrop-blur shadow-lg rounded-2xl p-8 border border-white">
+        <h2 class="text-2xl font-bold text-pink-700 mb-4">🔐 Seguridad Aplicada</h2>
+        <p class="leading-relaxed text-gray-700">
+          Se añadieron precauciones para no dejar expuesto el sistema. 
+          Solo se habilitó el puerto necesario para acceder a la página web, 
+          se limitaron las conexiones, se restringió el acceso a SSH y se organizó el contenido en archivos para minimizar errores. 
+          Estas medidas ayudan a prevenir filtraciones no deseadas y reflejan buenas prácticas de configuración.
+        </p>
+      </section>
+
+      <section class="bg-white/80 backdrop-blur shadow-lg rounded-2xl p-8 border border-white">
+        <h2 class="text-2xl font-bold text-green-700 mb-4">✅ Conclusión</h2>
+        <p class="leading-relaxed text-gray-700">
+          Esta experiencia demostró que no solo se trata de instalar programas: 
+          hay planificación y configuración detrás de todo el proceso. 
+          Debemos documentar lo realizado de manera correcta y ordenada, con disciplina. 
+          El resultado fue un servidor correctamente configurado, seguro y funcional, 
+          dándonos confianza para futuros proyectos en la nube.
+        </p>
+      </section>
+
+      
+      <div class="text-center space-x-4">
+        <a href="../index.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg shadow-md transition duration-200">
+          🌐 Ir a Index
+        </a>
+        <a href="log.html" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 px-6 rounded-lg shadow-md transition duration-200">
+          📑 Ver Log
+        </a>
+        <a href="reporte.html" class="inline-block bg-pink-600 hover:bg-pink-700 text-white font-medium py-3 px-6 rounded-lg shadow-md transition duration-200">
+          📝 Ver Reporte
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-4 text-center">
+    <p class="text-sm opacity-80">&copy; 2025 Proyecto Azure - Trabajo de Laboratorio</p>
+  </footer>
+
+</body>
+</html>

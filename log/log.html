@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registro de Actividades - Log</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-blue-600 text-white py-8 shadow-md">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-extrabold">Registro de Actividades (Log)</h1>
+            <p class="mt-2 opacity-90">Detalle de acciones, resultados y evidencias</p>
+        </div>
+    </header>
+
+    <div class="mb-6 p-4 bg-yellow-100 border border-yellow-300 text-yellow-800 rounded-lg shadow text-center">
+        <strong>Nota:</strong> Haz clic sobre cualquier imagen para verla en grande.
+    </div>
+
+    <main class="container mx-auto px-4 py-10">
+        <div class="overflow-x-auto rounded-xl shadow-lg border border-gray-200">
+            <table class="min-w-full bg-white divide-y divide-gray-200">
+                <thead class="bg-blue-600 text-white">
+                    <tr>
+                        <th class="py-3 px-6 text-left">Hora</th>
+                        <th class="py-3 px-6 text-left">Acción realizada</th>
+                        <th class="py-3 px-6 text-left">Resultado / Error</th>
+                        <th class="py-3 px-6 text-center">Evidencia</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+
+                    <tr class="hover:bg-blue-50">
+                        <td class="py-4 px-6 align-top">9:30</td>
+                        <td class="py-4 px-6 align-top">
+                            Creación de máquina virtual, ingresando Azure student, nombre prueba 1309, zona 2, Ubuntu
+                            server, tamaño estándar (3,80 US$ mes)
+                        </td>
+                        <td class="py-4 px-6 align-top">
+                            Recomendación de implementación<br>
+                            <span class="text-red-600 font-semibold">Error de validación</span>
+                        </td>
+                        <td class="py-4 px-6 align-top text-center">
+                            <img src="../res/Captura de pantalla 2025-09-13 094216.png" alt="Captura"
+                                class="thumb mx-auto w-28 h-20 object-cover rounded-lg border shadow cursor-pointer" />
+                        </td>
+                    </tr>
+
+                    <tr class="hover:bg-blue-50">
+                        <td class="py-4 px-6 align-top">9:40</td>
+                        <td class="py-4 px-6 align-top">Creación de la misma máquina</td>
+                        <td class="py-4 px-6 align-top text-green-700 font-semibold">Validación superada</td>
+                        <td class="py-4 px-6 align-top text-center">
+                            <img src="../res/Captura de pantalla 2025-09-13 094656.png" alt="Captura"
+                                class="thumb mx-auto w-28 h-20 object-cover rounded-lg border shadow cursor-pointer" />
+                        </td>
+                    </tr>
+
+                    <tr class="hover:bg-blue-50">
+                        <td class="py-4 px-6 align-top">9:53</td>
+                        <td class="py-4 px-6 align-top">Conectar la máquina, ingresar la ruta de la KEY</td>
+                        <td class="py-4 px-6 align-top text-green-700 font-semibold">Configuración guardada
+                            correctamente</td>
+                        <td class="py-4 px-6 align-top text-center">
+                            <img src="../res/Captura de pantalla 2025-09-13 110300.png" alt="Captura"
+                                class="thumb mx-auto w-28 h-20 object-cover rounded-lg border shadow cursor-pointer" />
+                        </td>
+                    </tr>
+
+                    <tr class="hover:bg-blue-50">
+                        <td class="py-4 px-6 align-top">9:57</td>
+                        <td class="py-4 px-6 align-top">Ingresar al cmd para probar la conexión</td>
+                        <td class="py-4 px-6 align-top text-red-600 font-semibold">Error de autenticación</td>
+                        <td class="py-4 px-6 align-top text-center">
+                            <img src="../res/Captura de pantalla 2025-09-13 095720.png" alt="Captura"
+                                class="thumb mx-auto w-28 h-20 object-cover rounded-lg border shadow cursor-pointer" />
+                        </td>
+                    </tr>
+
+                    <tr class="hover:bg-blue-50">
+                        <td class="py-4 px-6 align-top">10:20</td>
+                        <td class="py-4 px-6 align-top">Iniciar bastión</td>
+                        <td class="py-4 px-6 align-top text-green-700 font-semibold">Ventana abierta correctamente</td>
+                        <td class="py-4 px-6 align-top text-center">
+                            <img src="../res/Captura de pantalla 2025-09-13 094656.png" alt="Captura"
+                                class="thumb mx-auto w-28 h-20 object-cover rounded-lg border shadow cursor-pointer" />
+                        </td>
+                    </tr>
+
+                    <tr class="hover:bg-blue-50">
+                        <td class="py-4 px-6 align-top">10:35</td>
+                        <td class="py-4 px-6 align-top">APT update</td>
+                        <td class="py-4 px-6 align-top text-green-700 font-semibold">Cargando paquetes</td>
+                        <td class="py-4 px-6 align-top text-center">
+                            <img src="../res/Captura de pantalla 2025-09-13 111208.png" alt="Captura"
+                                class="thumb mx-auto w-28 h-20 object-cover rounded-lg border shadow cursor-pointer" />
+                        </td>
+                    </tr>
+
+                    <tr class="hover:bg-blue-50">
+                        <td class="py-4 px-6 align-top">10:40</td>
+                        <td class="py-4 px-6 align-top">Sudo apt install apache2 -y</td>
+                        <td class="py-4 px-6 align-top text-red-600 font-semibold">Demora de 30 minutos al instalar</td>
+                        <td class="py-4 px-6 align-top text-center">
+                            <img src="../res/Captura de pantalla 2025-09-13 111437.png" alt="Captura"
+                                class="thumb mx-auto w-28 h-20 object-cover rounded-lg border shadow cursor-pointer" />
+                        </td>
+                    </tr>
+
+                    <tr class="hover:bg-blue-50">
+                        <td class="py-4 px-6 align-top">14:22</td>
+                        <td class="py-4 px-6 align-top">Instalando apache2</td>
+                        <td class="py-4 px-6 align-top text-green-700 font-semibold">Instalado correctamente</td>
+                        <td class="py-4 px-6 align-top text-center">
+                            <img src="../res/image.png" alt="Captura"
+                                class="thumb mx-auto w-28 h-20 object-cover rounded-lg border shadow cursor-pointer" />
+                        </td>
+                    </tr>
+
+                    <tr class="hover:bg-blue-50">
+                        <td class="py-4 px-6 align-top">14:24</td>
+                        <td class="py-4 px-6 align-top">Instalando GitHub</td>
+                        <td class="py-4 px-6 align-top text-green-700 font-semibold">Instalado correctamente</td>
+                        <td class="py-4 px-6 align-top text-center">
+                            <img src="../res/Captura de pantalla 2025-09-13 160941.png" alt="Captura"
+                                class="thumb mx-auto w-28 h-20 object-cover rounded-lg border shadow cursor-pointer" />
+                        </td>
+                    </tr>
+
+                    <tr class="hover:bg-blue-50">
+                        <td class="py-4 px-6 align-top">14:58</td>
+                        <td class="py-4 px-6 align-top">Repositorio copiándose</td>
+                        <td class="py-4 px-6 align-top text-green-700 font-semibold">Repositorio copiado</td>
+                        <td class="py-4 px-6 align-top text-center">
+                            <img src="../res/Captura de pantalla 2025-09-13 160941.png" alt="Captura"
+                                class="thumb mx-auto w-28 h-20 object-cover rounded-lg border shadow cursor-pointer" />
+                        </td>
+                    </tr>
+
+                    <tr class="hover:bg-blue-50">
+                        <td class="py-4 px-6 align-top">15:02</td>
+                        <td class="py-4 px-6 align-top">Verificando archivos</td>
+                        <td class="py-4 px-6 align-top text-green-700 font-semibold">Todos los archivos están correctos
+                        </td>
+                        <td class="py-4 px-6 align-top text-center">
+                            <img src="../res/Captura de pantalla 2025-09-13 161815.png" alt="Captura"
+                                class="thumb mx-auto w-28 h-20 object-cover rounded-lg border shadow cursor-pointer" />
+                        </td>
+                    </tr>
+
+                    <tr class="hover:bg-blue-50">
+                        <td class="py-4 px-6 align-top">15:21</td>
+                        <td class="py-4 px-6 align-top">Ingresando el puerto 80</td>
+                        <td class="py-4 px-6 align-top text-green-700 font-semibold">Puerto agregado</td>
+                        <td class="py-4 px-6 align-top text-center">
+                            <img src="../res/WhatsApp Image 2025-09-13 at 4.21.28 PM.jpeg" alt="Captura"
+                                class="thumb mx-auto w-28 h-20 object-cover rounded-lg border shadow cursor-pointer" />
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+
+    <div id="imgModal" class="fixed inset-0 hidden bg-black/80 z-50 flex items-center justify-center p-4">
+        <div class="relative">
+            <button id="closeModal"
+                class="absolute -top-4 -right-4 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center shadow-lg hover:bg-gray-200">✕</button>
+            <img id="modalImage" src="" alt="Vista ampliada"
+                class="max-h-[90vh] max-w-[90vw] rounded-lg shadow-2xl border-4 border-white" />
+        </div>
+    </div>
+
+    <div class="text-center space-x-4">
+        <a href="../index.html"
+            class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg shadow-md transition duration-200">
+            🌐 Ir a Index
+        </a>
+        <a href="log.html"
+            class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 px-6 rounded-lg shadow-md transition duration-200">
+            📑 Ver Log
+        </a>
+        <a href="reportes.html"
+            class="inline-block bg-pink-600 hover:bg-pink-700 text-white font-medium py-3 px-6 rounded-lg shadow-md transition duration-200">
+            📝 Ver Reporte
+        </a>
+    </div>
+    <BR><BR>
+
+    <footer class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-4 text-center">
+        <p class="text-sm opacity-80">&copy; 2025 Proyecto Azure - Trabajo de Laboratorio</p>
+    </footer>
+
+
+    <script>
+        const thumbs = document.querySelectorAll('.thumb');
+        const modal = document.getElementById('imgModal');
+        const modalImage = document.getElementById('modalImage');
+        const closeModal = document.getElementById('closeModal');
+
+        thumbs.forEach(img => {
+            img.addEventListener('click', () => {
+                modal.classList.remove('hidden');
+                modalImage.src = img.src;
+                modalImage.alt = img.alt;
+            });
+        });
+
+        closeModal.addEventListener('click', () => {
+            modal.classList.add('hidden');
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) modal.classList.add('hidden');
+        });
+    </script>
+
+</body>
+
+</html>
